@@ -1,1 +1,19 @@
-/* code CSS */
+/* 
+    reset css
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.content{
+    text-align: center;
+}
+.image{
+    /* background-color: red; */
+    text-align: center;
+}

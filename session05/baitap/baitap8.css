@@ -1,0 +1,35 @@
+/* 
+    reset CSS
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+
+}
+.container .title{
+    border-bottom: 3px dashed rgb(158, 152, 152);
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.column_content{
+    vertical-align: top;
+    padding: 10px;
+    opacity: 0.8;
+}
+.column_content p{
+    font-weight: 900;
+    font-size: 24px;
+}
+.column_image{
+    border-left: 2px solid rgb(196, 192, 192);
+}
+.column_image img{
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.column_image_head img{
+    border-radius: 10px;
+}
