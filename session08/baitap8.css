@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.search {
+    background-color: red;
+    width: 400px;
+    height: 40px;
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+}
+
+.search .icon_search {
+
+    position: absolute;
+    top: 8px;
+    left: 50px;
+
+}
+
+.search .input_search {
+    width: 300px;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.input_search::placeholder {
+    color: red;
+    padding-left: 25px;
+}
+
+.icon_micro {
+    position: absolute;
+    right: 100px;
+    top: 8px;
+}
+.icon_camera {
+   position: absolute;
+   right: 78px;
+   top: 8px;
+}
