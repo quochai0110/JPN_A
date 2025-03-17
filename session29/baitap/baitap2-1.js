@@ -9,6 +9,12 @@ while (true) {
             // tạo hàm để thêm
             addProduct();
             break;
+        case 2:
+            showProduct();
+            break;
+        case 3:
+            productDetail();
+            break;
         default:
             break;
     }
@@ -39,4 +45,21 @@ function addProduct() {
     // thêm đối tượng vào mảng 
     products.push(product);
     console.log("thêm sản phẩm thành công");
+}
+function showProduct(){
+    if(products == 0){
+        console.log("Không có sản phẩm nào");
+    }else{
+        console.log(products);
+    }
+}
+// Tạo hàm hiển thị chi tiêt sản phẩm theo id
+function productDetail () {
+    let id = +prompt("Hãy nhập id sản phẩm");
+    let result = products.find(product => product.id === id );
+    if(result){
+        console.log(`sản phẩm có id: ${id}là`,result);
+    }else{
+        console.log("Không có sản phẩm với id là",id);
+    }
 }
