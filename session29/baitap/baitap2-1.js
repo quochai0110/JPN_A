@@ -60,6 +60,6 @@ function productDetail () {
     if(result){
         console.log(`sản phẩm có id: ${id}là`,result);
     }else{
-        console.log("Không có sản phẩm với id là",id);
+        console.log("Không có sản phẩm với id là",id);``
     }
 }
