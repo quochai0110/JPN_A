@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: black;
+            color: white;
+        }
+        .title{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TOGGLE DARK / TOGGLE LIGHT MODE</h1>
+        <p>click...</p>
+        <button class="btn">toogle dark mode</button>
+    </div>
+    <script>
+        document.getElementsByClassName("btn")[0].addEventListener("click",()=>{
+            document.getElementsByClassName("container")[0].classList.toggle("title");
+        })
+    </script>
+</body>
+</html>
