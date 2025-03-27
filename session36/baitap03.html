@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        .container{
+            border: 1px solid black;
+            width: 500px;
+            height: 200px;
+        }
+        .btn-red{
+            background-color: red;
+            color: white;
+        }
+        .btn-green{
+            background-color: rgb(28, 240, 16);
+            color: white;
+        }
+        .btn-yellow{
+            background-color: yellow;
+            color: black;
+        }
+        .btn-violet{
+            background-color: violet;
+
+        }
+        .btn{
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+  
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Chọn màu nèn yêu thích</h1>
+        <button class="btn-red btn" onclick="changeColor('red')">Đỏ</button>
+        <button class="btn-green btn" onclick="changeColor('green')">Xanh</button>
+        <button class="btn-yellow btn" onclick="changeColor('yellow')">Vàng</button>
+        <button class="btn-violet btn" onclick="changeColor('violet')">Tím</button>
+    </div>
+    <script>
+        function changeColor(color){
+            document.getElementsByClassName("container")[0].style.backgroundColor = color;
+            localStorage.setItem("backgroundColor", color)
+        }
+        
+    </script>
+</body>
+
+</html>
